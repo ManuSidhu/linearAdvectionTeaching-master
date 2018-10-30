@@ -1,0 +1,31 @@
+Great start
+
+Feedback on your use of git:
+
+1. You should do more regular commits with commit messages describing the recent code.
+
+2. You need a .gitignore file and do not put binary files such as .pyc files into a git repository
+
+Update the Readme files
+
+You can put definitions of all of the schemes into advectionSchemes.py
+
+Functions should always have docstrings describing what they do. See the guidelines at 
+https://www.dropbox.com/s/yba7pj7woyvv7hs/goodCode.pdf?dl=1
+
+Comments should describe the boundary conditions
+
+Do not leave commented out code in your code
+
+For CTCS, you should do one time step of a forward in time scheme (such s FTCS) to get phi at time 1 and then nt-1 time steps of CTCS
+
+Change the name of the file "changeThisName.pdf" in python
+
+The plot needs a legend
+
+You will need to calculate more diagnostics analysing the behaviour of your schemes.
+
+Also use the square wave initial conditions to compare how different schemes advect discontinuities.
+
+You should also implement one of the schemes from chapter 6 of the notes to show that schemes exist that can do better than CTCS and FTBS
+
