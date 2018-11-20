@@ -19,7 +19,7 @@ def squareWave(x,alpha,beta):
     dx = x[1] - x[0]
     
     # Set phi away from the end points (assume zero at the end points)
-    for j in xrange(1,len(x)-1):
+    for j in range(1,len(x)-1):
         # edges of the grid box (using west and east notation)
         xw = x[j] - 0.5*dx
         xe = x[j] + 0.5*dx
