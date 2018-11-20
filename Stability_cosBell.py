@@ -142,7 +142,7 @@ def main():
     #plt.plot(x, phiFTCS, label='FTCS', color='yellow')
     plt.plot(x, phiFTBS, label='FTBS', color='darkviolet', marker='.')
     plt.plot(x, phiCTCS[nt-1,:], label='CTCS', color='red')
-    #plt.plot(x, phiBTCS, label='BTCS', color='blue')
+    plt.plot(x, phiBTCS, label='BTCS', color='blue')
     plt.plot(x, phiLaxWendroff, label ='LW', color ='yellow')
     plt.axhline(0, linestyle=':', color='black')
     plt.ylim([-0.3,1.6])
@@ -173,7 +173,7 @@ def main():
     phiFTCS = FTCS(phiOld.copy(), c, nt)
     phiFTBS = FTBS(phiOld.copy(), c, nt)
     phiCTCS = CTCS(phiOld.copy(), c, nt)
-    phiBTCS = BTCS(phiOld.copy(), c, nt)
+#    phiBTCS = BTCS(phiOld.copy(), c, nt)
     phiLaxWendroff = LaxWendroff(phiOld.copy(), c, nt)
     
     # Calculate and print out error norms

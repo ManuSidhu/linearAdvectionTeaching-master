@@ -46,7 +46,7 @@ def main():
     phiFTCS = FTCS(phiOld.copy(), c, nt)
     phiFTBS = FTBS(phiOld.copy(), c, nt)
     phiCTCS = CTCS(phiOld.copy(), c, nt)
-    phiBTCS = BTCS(phiOld.copy(), c, nt)
+#    phiBTCS = BTCS(phiOld.copy(), c, nt)
     phiLaxWendroff = LaxWendroff(phiOld.copy(), c, nt)
     TotalVarFTBS_sum, TotalVarLaxWendroff_sum, TotalVarCTCS_sum = TotalVar(phiOld.copy(), c, nt)
     
@@ -87,7 +87,7 @@ def main():
     phiFTCS = FTCS(phiOld.copy(), c, nt)
     phiFTBS = FTBS(phiOld.copy(), c, nt)
     phiCTCS = CTCS(phiOld.copy(), c, nt)
-    phiBTCS = BTCS(phiOld.copy(), c, nt)
+#    phiBTCS = BTCS(phiOld.copy(), c, nt)
     phiLaxWendroff = LaxWendroff(phiOld.copy(), c, nt)
     TotalVarFTBS_sum, TotalVarLaxWendroff_sum, TotalVarCTCS_sum = TotalVar(phiOld.copy(), c, nt)
      
