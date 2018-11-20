@@ -1,5 +1,9 @@
-Skeleton Python 3 code for students to develop in a linear advection assignment. All code is run from linearAdvect.py. Linear advection schemes are implemented in advectionSchemes.py. Some error diagnostics  are implemented in diagnostics.py  and some functions for initial conditions are in initialConditions.py.
+Hi Hilary,
 
-In order to run this code you will first need to create a directory called "plots". 
+In order to run the code the following 3 scripts need to be run
 
-Note that in order to use matplotlib with python3 you may need to install python3-matplotlib
+Stability_cosBell.py - this will produce 3 plots with differing c values
+
+Stability_squareWave.py - this is will produce 3 plots with differing c values
+
+TotalVariationPlots.py - this is produce 2 plots one with a cos wave and the other square wave.
