@@ -50,20 +50,20 @@ def main():
     phiLaxWendroff = LaxWendroff(phiOld.copy(), c, nt)
     TotalVarFTBS_sum, TotalVarLaxWendroff_sum, TotalVarCTCS_sum = TotalVar(phiOld.copy(), c, nt)
     
-    font = {'size'   : 16}
+    font = {'size'   : 12}
     plt.rc('font', **font)
     time = np.linspace(2,(nt-2),(nt-2))
     plt.figure(1)
     plt.clf()
     plt.ion()
-    plt.plot(time, TotalVarFTBS_sum, label='FTBS', color='darkviolet', marker='.')
-    plt.plot(time, TotalVarCTCS_sum, label='CTCS', color='red', marker='*')
-    plt.plot(time, TotalVarLaxWendroff_sum, label='LW', color='yellow', marker ='o')
+    plt.plot(time, TotalVarFTBS_sum, label='FTBS', color='darkviolet', marker='')
+    plt.plot(time, TotalVarCTCS_sum, label='CTCS', color='red', marker='')
+    plt.plot(time, TotalVarLaxWendroff_sum, label='LW', color='yellow', marker ='')
     #plt.ylim([1.875,2.05])
     plt.legend(bbox_to_anchor=(0.2, 1), fontsize=8)
-    plt.title('Total Variation cosine wave', fontsize=16)
+    plt.title('Total variation cosine wave', fontsize=12)
     plt.xlabel('Number of time steps')
-    plt.ylabel('$L2 Error$')
+    plt.ylabel('L2 Error')
       
        # Parameters
     xmin = 0
@@ -91,20 +91,20 @@ def main():
     phiLaxWendroff = LaxWendroff(phiOld.copy(), c, nt)
     TotalVarFTBS_sum, TotalVarLaxWendroff_sum, TotalVarCTCS_sum = TotalVar(phiOld.copy(), c, nt)
      
-    font = {'size'   : 16}
+    font = {'size'   : 12}
     plt.rc('font', **font)
     time = np.linspace(2,(nt-2),(nt-2))
     plt.figure(2)
     plt.clf()
     plt.ion()
-    plt.plot(time, TotalVarFTBS_sum, label='FTBS', color='darkviolet', marker='.')
-    plt.plot(time, TotalVarCTCS_sum, label='CTCS', color='red', marker='*')
-    plt.plot(time, TotalVarLaxWendroff_sum, label='LW', color='yellow', marker ='o')
+    plt.plot(time, TotalVarFTBS_sum, label='FTBS', color='darkviolet', marker='')
+    plt.plot(time, TotalVarCTCS_sum, label='CTCS', color='red', marker='')
+    plt.plot(time, TotalVarLaxWendroff_sum, label='LW', color='yellow', marker ='')
     #plt.ylim([1.875,2.05])
     plt.legend(bbox_to_anchor=(0.2, 1), fontsize=8)
-    plt.title('Total Variation square wave', fontsize=16)
+    plt.title('Total variation square wave', fontsize=12)
     plt.xlabel('Number of time steps')
-    plt.ylabel('$L2 Error$')
+    plt.ylabel('L2 Error')
 
 ### Run the function main defined in this file                      ###
 main()

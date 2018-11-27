@@ -63,7 +63,7 @@ def main():
     print("LaxWendroff linf error norm = ", lInfErrorNorm(phiLaxWendroff, phiAnalytic))
 
     # Plot the solutions
-    font = {'size'   : 16}
+    font = {'size'   : 12}
     plt.rc('font', **font)
     plt.figure(1)
     plt.clf()
@@ -80,7 +80,7 @@ def main():
     plt.axhline(0, linestyle=':', color='black')
     plt.ylim([-0.3,1.6])
     plt.legend(bbox_to_anchor=(0.2, 1), fontsize=8)
-    plt.title('Stability analysis when c = 0.2', fontsize=16)
+    plt.title('Stability analysis when c = 0.2', fontsize=12)
     plt.xlabel('$x$')
     plt.ylabel('$u$')
 #    input('press return to save file and continue')
@@ -91,8 +91,8 @@ def main():
     xmin = 0
     xmax = 1
     nx = 80
-    nt = 16
-    c = 1
+    nt = 20
+    c = 0.8
 
     # Derived parameters
     dx = (xmax - xmin)/nx
@@ -130,7 +130,7 @@ def main():
     print("LaxWendroff linf error norm = ", lInfErrorNorm(phiLaxWendroff, phiAnalytic))
 
     # Plot the solutions
-    font = {'size'   : 16}
+    font = {'size'   : 12}
     plt.rc('font', **font)
     plt.figure(2)
     plt.clf()
@@ -142,12 +142,12 @@ def main():
     #plt.plot(x, phiFTCS, label='FTCS', color='yellow')
     plt.plot(x, phiFTBS, label='FTBS', color='darkviolet', marker='.')
     plt.plot(x, phiCTCS[nt-1,:], label='CTCS', color='red')
-    plt.plot(x, phiBTCS, label='BTCS', color='blue')
+    #plt.plot(x, phiBTCS, label='BTCS', color='blue')
     plt.plot(x, phiLaxWendroff, label ='LW', color ='yellow')
     plt.axhline(0, linestyle=':', color='black')
     plt.ylim([-0.3,1.6])
     plt.legend(bbox_to_anchor=(0.2, 1), fontsize=8)
-    plt.title('Stability analysis when c = 1', fontsize=16)
+    plt.title('Stability analysis when c = 0.8', fontsize=12)
     plt.xlabel('$x$')
     plt.ylabel('$u$')
     
@@ -193,7 +193,7 @@ def main():
     print("LaxWendroff linf error norm = ", lInfErrorNorm(phiLaxWendroff, phiAnalytic))
 
     # Plot the solutions
-    font = {'size'   : 16}
+    font = {'size'   : 12}
     plt.rc('font', **font)
     plt.figure(3)
     plt.clf()
@@ -210,7 +210,7 @@ def main():
     plt.axhline(0, linestyle=':', color='black')
     plt.ylim([-0.3,1.6])
     plt.legend(bbox_to_anchor=(0.2, 1), fontsize=8)
-    plt.title('Stability analysis when c = 1.6', fontsize=16)
+    plt.title('Stability analysis when c = 1.6', fontsize=12)
     plt.xlabel('$x$')
     plt.ylabel('$u$')
 
